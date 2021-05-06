@@ -1,0 +1,30 @@
+# start python virtual environment
+activate
+
+# stop python virtual environment
+deactivate
+
+# create virtual environment
+virtualenv --system-site-packages -p python .venv
+
+# intall project packages
+pip install -r requirements.txt
+
+# reset last commit without losing changes
+git reset --soft HEAD~1
+
+# activate virtual environment
+activate.bat
+
+# deactivate virtual environment
+deactivate
+
+# list python installed packages
+pip list
+
+# upgrade pip
+python -m pip install --upgrade pip
+
+# uninstall all pip packages
+pip freeze > requirements.txt
+pip uninstall -r requirements.txt -y
