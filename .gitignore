@@ -1,6 +1,8 @@
+.git
 .venv
 .vscode
 *.pyc
 *.log
 *.csv
+*.xlsx
 __pycache__
